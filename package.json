@@ -1,0 +1,20 @@
+{
+  "name": "node-mate",
+  "version": "1.0.0",
+  "description": "The library for the MATE protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.csdn.net/wuyingfengsui/node-mate.git"
+  },
+  "keywords": [
+    "mate",
+    "p2p",
+    "DHT"
+  ],
+  "author": "covertness",
+  "license": "ISC"
+}

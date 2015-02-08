@@ -1,0 +1,8 @@
+digraph G{
+	lookup -> indirect;
+	indirect -> direct;
+
+	lookup[label="lookup in the DHT"];
+	indirect[label="indirect connect"];
+	direct[label="direct connect"];
+}
