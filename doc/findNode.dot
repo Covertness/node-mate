@@ -1,8 +1,13 @@
 digraph G{
-	lookup -> indirect;
-	indirect -> direct;
+	lookup -> isLocal;
+	isLocal: e -> direct_route_node[label="no"];
+	isLocal: w -> direct_node[label="yes"];
+	direct_route_node -> indirect_node;
+	indirect_node -> direct_node;
 
 	lookup[label="lookup in the DHT"];
-	indirect[label="indirect connect"];
-	direct[label="direct connect"];
+	isLocal[label="in the local DHT", shape="diamond"];
+	direct_route_node[label="direct connect the route node"];
+	indirect_node[label="indirect connect the expected node"];
+	direct_node[label="direct connect the expected node"];
 }

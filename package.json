@@ -16,5 +16,13 @@
     "DHT"
   ],
   "author": "covertness",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bencode": "^0.7.0",
+    "ht": "0.0.2",
+    "inherits": "^2.0.1",
+    "k-bucket": "^0.4.2",
+    "my-local-ip": "^1.0.0",
+    "uuid": "^2.0.1"
+  }
 }
