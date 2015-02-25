@@ -13,10 +13,6 @@ Node2->Node3: conack
 Node3->Node1: conack
 
 linear
-Node1->Node3: concomp
-Node3->Node2: concomp
-
-linear
 Node1<->Node3: ping
 Node3<->Node2: ping
 
