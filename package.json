@@ -20,6 +20,7 @@
   "dependencies": {
     "bencode": "^0.7.0",
     "buffer-equal": "0.0.1",
+    "debug": "^2.1.1",
     "ht": "0.0.2",
     "inherits": "^2.0.1",
     "k-bucket": "^0.4.2",

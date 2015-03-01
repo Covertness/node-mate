@@ -4,25 +4,30 @@ var node = mate.createNode({
 	networkPort: 2017
 });
 
+node.on('message', function(from, message) {
+	console.log('receive ' + from.id.toString() + ' message: ' + message);
+});
+
 node.on('listening', function() {
 	console.log('The mate node ' + node.localNodeContact.id.toString() + ' started');
 
 	node.directConnect({
 		ip: '127.0.0.1',
 		port: 2016
-	}, function(success) {
-		console.log('connect ' + success);
-		node.lookup('95499720-b4f6-11e4-afba-efd5b147fc02', function(success, lookupNode, fatherNode) {
-			if (success === true) {
-				if (fatherNode) {
-					console.log('find ' + lookupNode.id.toString() + ' from ' + fatherNode.id.toString());
+	}, function(success, nodeId) {
+		if (success === true) {
+			console.log('direct connect node ' + nodeId + ' success');
+
+			node.send('908eea30-bff7-11e4-a566-97d971bca1d1', 'I\'m here!', function(success) {
+				if (success === true) {
+					console.log('send message success');
 				} else {
-					console.log('find ' + lookupNode.id.toString() + ' locally');
+					console.log('send message failed');
 				}
-			} else {
-				console.log('can\'t find it');
-			}
-		});
+			});
+		} else {
+			console.log('direct connect node failed');
+		}
 	});
 
 });
