@@ -1,7 +1,7 @@
 var mate = require('../');
 
 var node = mate.createNode({
-	networkPort: 2017
+	networkPort: 2015
 });
 
 node.on('message', function(from, message) {
@@ -12,13 +12,13 @@ node.on('listening', function() {
 	console.log('The mate node ' + node.localNodeContact.id.toString() + ' started');
 
 	node.directConnect({
-		ip: '127.0.0.1',
-		port: 2016
-	}, function(success, nodeId) {
+		ip: '203.195.153.192',
+		port: 2015
+	}, function(success, newNode) {
 		if (success === true) {
-			console.log('direct connect node ' + nodeId + ' success');
+			console.log('direct connect node ' + newNode.id.toString() + ' success');
 
-			node.send('908eea30-bff7-11e4-a566-97d971bca1d1', 'I\'m here!', function(success) {
+			node.send('98875640-c0d9-11e4-a985-d3d0c6697805', 'I\'m here!', function(success) {
 				if (success === true) {
 					console.log('send message success');
 				} else {
