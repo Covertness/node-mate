@@ -1,15 +1,11 @@
 var mate = require('../');
 
 var node = mate.createNode({
-	networkPort: 2015,
-	rootNode: {
-		ip: '203.195.153.192',
-		port: 2015
-	}
+	networkPort: 2015
 });
 
 node.on('message', function(from, message) {
-	console.log('receive ' + from.id.toString() + ' message: ' + message);
+	console.log('receive ' + from.id.toString() + ' message: ' + message.toString());
 
 	node.send(from.id.toString(), 'Hi!', function(success) {
 		if (success === true) {
@@ -20,7 +16,11 @@ node.on('message', function(from, message) {
 	});
 });
 
-node.on('root_connected', function() {
+node.on('listening', function() {
+	console.log('mate node ' + node.localNodeContact.id.toString() + ' started');
+});
+
+node.on('root_connected', function(root) {
 	console.log('root node connected');
 
 /*
@@ -34,6 +34,6 @@ node.on('root_connected', function() {
 */
 });
 
-node.on('root_disconnect', function() {
+node.on('root_disconnect', function(root) {
 	console.log('root node disconnect');
 });
