@@ -18,6 +18,8 @@ Node3<->Node2: ping
 
 Node1<-->Node2: ping periodically
 
+Node1<-->Node2: message
+
 note right of Node1: All packages are included in the server package
 
 note right of Node3: All packages are included in the nat package

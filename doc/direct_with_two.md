@@ -13,3 +13,5 @@ linear
 Node1<->Node2: ping
 
 Node1<-->Node2: ping periodically
+
+Node1<-->Node2: message
