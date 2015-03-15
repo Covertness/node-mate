@@ -1,6 +1,6 @@
 {
   "name": "node-mate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The library for the MATE protocol",
   "main": "index.js",
   "scripts": {
