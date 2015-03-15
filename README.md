@@ -2,7 +2,7 @@
 
 ------
 
-node-mate is a library for [the MATE protocol](doc/mate-protocol.md), written in JavaScript for node.js.
+node-mate is a library for [the MATE protocol](https://code.csdn.net/wuyingfengsui/node-mate/tree/master/doc/mate-protocol.md), written in JavaScript for node.js.
 
 
 ## Installation
