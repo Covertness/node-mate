@@ -8,7 +8,9 @@ node-mate is a library for [the MATE protocol](https://code.csdn.net/wuyingfengs
 ## Features
 
 Distributed
+
 QoS
+
 Easy-to-use
 
 
