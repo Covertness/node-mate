@@ -1,6 +1,6 @@
 {
   "name": "node-mate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The library for the MATE protocol",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "DHT"
   ],
   "author": "covertness",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bencode": "^0.7.0",
     "buffer-equal": "0.0.1",

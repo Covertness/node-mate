@@ -5,13 +5,21 @@
 node-mate is a library for [the MATE protocol](https://code.csdn.net/wuyingfengsui/node-mate/tree/master/doc/mate-protocol.md), written in JavaScript for node.js.
 
 
+## Features
+
+Distributed
+QoS
+Easy-to-use
+
+
 ## Installation
 
 ```sh
 npm install node-mate
 ```
 
-## Example
+
+## Quick start
 
 Starting the first mate node.
 
@@ -59,6 +67,9 @@ node.on('root_connected', function(root) {
 });
 ```
 
+You can [run these code online](http://runnable.com/VQqZsvRIG-9DPqiN/mate-example-for-node-js-and-hello-world)!
+
+
 ## API
 * `mate.createNode()`
 * `mate.Node#send()`
@@ -81,6 +92,7 @@ Send a message.
 ### mate.Node#end()
 Shut down the node.
 
+
 ## Event
 * `'listening'`
 * `'root_connected'`
@@ -92,31 +104,48 @@ Shut down the node.
 
 ### 'listening'
 `function() {}`
+
 Emitted on successful listening on the node port
 
 ### 'root_connected'
 `function(rootNode) {}`
+
 Emitted when connected to the root node
 * `rootNode`: Information of the root node, including id, address and so on, `Object`
 
 ### 'message'
 `function(fromNode, message) {}`
+
 Emitted when receive  a message
 * `fromNode`: Information of the node that send message, including id, address and so on, `Object`
 * `message`: message of recevied, `Buffer`
 
 ### 'root_disconnect'
 `function(rootNode) {}`
+
 Emitted after lost the connection with the root node
 * `rootNode`: Information of the root node, including id, address and so on, `Object`
 
 ### 'net_error'
 `function(error) {}`
+
 Emitted when the node cannot listening.
 
 ### 'data_error'
 `function(error) {}`
+
 Emitted when a parsing error occurs.
 
 ### 'net_close'
+
 Emitted when the node shut down.
+
+
+## Code contributions
+
+By contributing code to the project in any form, including sending a pull request via Github, a code fragment or patch via email.
+
+
+## License
+
+MIT
