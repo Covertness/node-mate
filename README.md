@@ -4,7 +4,7 @@
 [![Join the chat at https://gitter.im/Covertness/node-mate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Covertness/node-mate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-node-mate is a library for [the MATE protocol](https://code.csdn.net/wuyingfengsui/node-mate/tree/master/doc/mate-protocol.md), written in JavaScript for node.js.
+node-mate is a library for [the MATE protocol](https://github.com/Covertness/node-mate/blob/master/doc/mate-protocol.md), written in JavaScript for node.js.
 
 
 ## Features
