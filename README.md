@@ -90,7 +90,7 @@ Create a mate node by the given options and returns the node.
 ### mate.Node#send(nodeId, message, [callback])
 Send a message.
 * `nodeId`: the node id to send to, `String`
-* `message`: the message to send to, `String` or `Buffer`
+* `message`: the message to send to, `String`, `Buffer` or `Object`
 * `callback`: fired on sended
 
 ### mate.Node#end()
@@ -122,7 +122,7 @@ Emitted when connected to the root node
 
 Emitted when receive  a message
 * `fromNode`: Information of the node that send message, including id, address and so on, `Object`
-* `message`: message of recevied, `Buffer`
+* `message`: message of recevied, `String`, `Buffer` or `Object`
 
 ### 'root_disconnect'
 `function(rootNode) {}`
