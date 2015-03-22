@@ -83,4 +83,4 @@ MATE协议有以下10种类型的数据包：
 发消息方发送包含消息及自身ID的message包给目标节点，目标节点收到后回复含有自身ID的msgack包即可。当节点处于间接连接状态时message和msgack会被包含于server包和nat包中，server包与nat包结构可以参考间接连接部分。
 
 ## 实现
-JavaScript(Node.js): https://code.csdn.net/wuyingfengsui/node-mate
+JavaScript(Node.js): https://www.npmjs.com/package/node-mate
