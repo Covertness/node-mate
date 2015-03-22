@@ -5,7 +5,7 @@ var node = mate.createNode({
 });
 
 node.on('message', function(from, message) {
-	console.log('receive ' + from.id.toString() + ' message: ' + message.toString());
+	console.log('receive ' + from.id.toString() + ' message: ' + message);
 
 	node.send(from.id.toString(), 'Hi!', function(success) {
 		if (success === true) {

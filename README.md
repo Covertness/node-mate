@@ -37,7 +37,7 @@ node.on('listening', function() {
 });
 
 node.on('message', function(from, message) {
-    console.log('receive ' + from.id.toString() + ' message: ' + message.toString());
+    console.log('receive ' + from.id.toString() + ' message: ' + message);
 });
 ```
 
