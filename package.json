@@ -4,7 +4,7 @@
   "description": "The library for the MATE protocol",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "inherits": "^2.0.1",
     "json3": "^3.3.2",
     "k-bucket": "^0.4.2",
+    "mocha": "^2.2.4",
     "my-local-ip": "^1.0.0",
     "uuid": "^2.0.1"
   }
